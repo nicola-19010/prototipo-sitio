@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <title>Mi primera web</title>
+</head>
+<body>
+    <!--Lista no ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+
+    <!--Lista ordenada-->
+    <ol>
+        <li value="50">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4
+            <ol>
+                <li style="list-style: lower-alpha;">Elemento 1</li>
+                <li style="list-style: lower-alpha;">Elemento 2</li>
+                <li style="list-style: lower-alpha;">Elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+
+    <form action="/formulario" method="POST">
+        <label for="nombre">Nombre</label>
+        <input  type="text" id="nombre" name="nombre" placeholder="Nicolas">
+        <br>
+        
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Pacheco"> 
+        <br>
+        
+        <label for="comentario" style="display: block">Comentario</label>
+        <textarea rows="10" cols="50" id="comentario" placeholder="Ingrese comentario name" name="comentario">texto por defecto</textarea>
+        <br>
+
+        <button type="button">Enviar</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
+
+    </form>
+
+    
+
+    <h1>Mi primer heading</h1>
+    <h2>Mi primer heading</h2>
+    <h3>Mi primer heading</h3>
+    <h4>Mi primer heading</h4>
+    <h5>Mi primer heading</h5>
+    <h6>Mi primer heading</h6>
+    
+    <p>Nico feliz esta muy feliz.</p>
+    <hr> <!-- Genera una de linea o separador de la pagina
+    no salto de linea como tal-->
+    <h2>Nico nico</h2>  
+    <!--El objetivo de la etiqueta span es que podamos identificar
+    algun texto o etiqueta html dentro de otras etiquetas
+    y asi que la podamos referenciar y asignarle algun estilo-->
+    <p>Este texto es <span style="color:blue">mucho mas largo</span> 
+        y es para mostrar <br>  
+        la etiqueta de span
+    </p>
+
+    <a href="https://www.google.cl">Ir a google</a>
+    <br>
+    <a target="_blank" href="https://es.wikipedia.org">Ir a wikipedia se abre en otra ventana</a>
+
+    <!--Agregar una imagen con de internet y luego de mi pc-->
+    <img src="img/imagenDePatitos.jpg" height="400" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Alice%2C_Princess_Louis_of_Hesse.jpg/300px-Alice%2C_Princess_Louis_of_Hesse.jpg"/>
+    
+
+    
+</body>
+</html>
